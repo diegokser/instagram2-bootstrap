@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  </head>
+<body>
+    <!-- NAVBAR -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fab fa-instagram" style="arimo"></i>
+                        Instagram
+                </a>
+                
+                <!-- BUTTON TRIGGER MODAL -->
+                <button type="button" class="btn btn-success ms-auto ms-2 me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Create a new post
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body py-0">
+                      <div class="px-auto px-3">
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="message-text" placeholder="Add the caption of your post"></textarea>
+                      </div>
+
+                    <button type="button" class="btn btn-light"><i class="fas fa-camera" style="color: #000000;"></i></button>
+                     <button type="button" class="btn btn-light"><i class="fas fa-map-marker-alt" style="color: #000205;"></i></button>
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- DROPDOWN HERRAMIENTAS -->
+                <div class="dropdown ">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-cog " style="color: #f7f7f7;"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                    <li><a class="dropdown-item text-danger border-top" href="#">Log out</a></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+        <!--PESTAÑAS DE IMAGENES -->
+
+        <nav class="d-flex justify-content-center"> <!--BOTONES ICONOS-->
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active border-0" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+              <i class="fas fa-th" style="color: #696969;"></i>
+            </button>
+            <button class="nav-link border-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+              <i class="fas fa-square" style="color: #696969;"></i>
+            </button>
+          </div>
+        </nav>
+        <!--IMAGENES-->
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <div class="row mx-3">
+                <img class="col-4 ms-0 my-1" src="https://dugongoviagens.com/wp-content/uploads/2018/12/isla-de-inhaca.jpg" alt="inhaca">
+                <img class="col-4 ms-0 my-1" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Toronto_Skyline_Summer_2020.jpg" alt="toronto">
+                <img class="col-4 ms-0 my-1" src="https://www.guiadeislandia.es/wp-content/uploads/2015/02/auroras-islandia-kirkjufell.jpg" alt="islandia">
+              </div>
+              <div class="row mx-3">
+                <img class="col-4 ms-0 my-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/A_view_of_Fuengirola_%2848829279762%29.jpg/800px-A_view_of_Fuengirola_%2848829279762%29.jpg" alt="fuengirola">
+                <img class="col-4 ms-0 my-1" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/5f/12/1c/caption.jpg?w=700&h=-1&s=1" alt="malaga">
+                <img class="col-4 ms-0 my-1" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/6a/f5/4c/caption.jpg?w=500&h=300&s=1" alt="madrid">
+              </div>
+              <div class="row mx-3">
+                <img class="col-4 ms-0 my-1" src="https://media.timeout.com/images/105951766/750/422/image.jpg" alt="tenerife">
+                <img class="col-4 ms-0 my-1" src="https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2022/06/16/62aaf088556cd.jpeg" alt="ceuta">
+                <img class="col-4 ms-0 my-1" src="https://www.cumbresdelsur.es/wp-content/uploads/parque-natural-sierra-de-grazalema.jpg" alt="jaen">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="row  d-flex justify-content-center">
+              <div class="col-6 mx-3 my-2">
+                <div class="card rounded-1">
+                  <div class="card-title d-flex justify-content-between mx-2 mt-3">
+                    <h5>Isla Inhaca </h5>
+                    <p>01/23</p>
+                  </div>
+                  <img src="https://dugongoviagens.com/wp-content/uploads/2018/12/isla-de-inhaca.jpg" class="card-img rounded-0" alt="inhaca">
+                  <div class="card-body">
+                    <h6 class="card-text">35 likes</h6>
+                    <p class="card-text">Un lugar paradisiaco</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="row  d-flex justify-content-center">
+                <div class="col-6 mx-3 my-2">
+                  <div class="card rounded-1">
+                    <div class="card-title d-flex justify-content-between mx-2 mt-3">
+                      <h5>Toronto </h5>
+                      <p>02/23</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Toronto_Skyline_Summer_2020.jpg" class="card-img rounded-0" alt="inhaca">
+                    <div class="card-body">
+                      <h6 class="card-text">50 likes</h6>
+                      <p class="card-text">Un lugar para vivir</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row  d-flex justify-content-center">
+                <div class="col-6 mx-3 my-2">
+                  <div class="card rounded-1">
+                    <div class="card-title d-flex justify-content-between mx-2 mt-3">
+                      <h5>Islandia </h5>
+                      <p>03/23</p>
+                    </div>
+                    <img src="https://www.guiadeislandia.es/wp-content/uploads/2015/02/auroras-islandia-kirkjufell.jpg" class="card-img rounded-0" alt="islandia">
+                    <div class="card-body">
+                      <h6 class="card-text">40 likes</h6>
+                      <p class="card-text">Un lugar de ensueño </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row  d-flex justify-content-center">
+              <div class="col-6 mx-3 my-2">
+                <div class="card rounded-1">
+                  <div class="card-title d-flex justify-content-between mx-2 mt-3">
+                    <h5>Fuengirola</h5>
+                    <p>04/23</p>
+                  </div>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/A_view_of_Fuengirola_%2848829279762%29.jpg/800px-A_view_of_Fuengirola_%2848829279762%29.jpg" class="card-img rounded-0" alt="fuengirola">
+                  <div class="card-body">
+                    <h6 class="card-text">60 likes</h6>
+                    <p class="card-text">Un lugar donde nacer</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row  d-flex justify-content-center">
+            <div class="col-6 mx-3 my-2">
+              <div class="card rounded-1">
+                <div class="card-title d-flex justify-content-between mx-2 mt-3">
+                  <h5>Málaga</h5>
+                  <p>05/23</p>
+                </div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/5f/12/1c/caption.jpg?w=700&h=-1&s=1" class="card-img rounded-0" alt="malaga">
+                <div class="card-body">
+                  <h6 class="card-text">70 likes</h6>
+                  <p class="card-text">Un lugar donde enamorarse </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row  d-flex justify-content-center">
+          <div class="col-6 mx-3 my-2">
+            <div class="card rounded-1">
+              <div class="card-title d-flex justify-content-between mx-2 mt-3">
+                <h5>Madrid</h5>
+                <p>06/23</p>
+              </div>
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/6a/f5/4c/caption.jpg?w=500&h=300&s=1" class="card-img rounded-0" alt="Madrid">
+              <div class="card-body">
+                <h6 class="card-text">50 likes</h6>
+                <p class="card-text">Un lugar donde trabajar  </p>
+              </div>
+            </div>
+            </div>
+                </div>
+                <div class="row  d-flex justify-content-center">
+                  <div class="col-6 mx-3 my-2">
+                    <div class="card rounded-1">
+                      <div class="card-title d-flex justify-content-between mx-2 mt-3">
+                        <h5>Tenerife</h5>
+                        <p>07/23</p>
+                      </div>
+                      <img src="https://media.timeout.com/images/105951766/750/422/image.jpg" class="card-img rounded-0" alt="Tenerife">
+                      <div class="card-body">
+                        <h6 class="card-text">67 likes</h6>
+                        <p class="card-text">Un lugar donde viajar</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row  d-flex justify-content-center">
+                <div class="col-6 mx-3 my-2">
+                  <div class="card rounded-1">
+                    <div class="card-title d-flex justify-content-between mx-2 mt-3">
+                      <h5>Ceuta</h5>
+                      <p>08/23</p>
+                    </div>
+                    <img src="https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2022/06/16/62aaf088556cd.jpeg" class="card-img rounded-0" alt="Ceuta">
+                    <div class="card-body">
+                      <h6 class="card-text">30 likes</h6>
+                      <p class="card-text">Un lugar donde empezar</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row  d-flex justify-content-center">
+              <div class="col-6 mx-3 my-2">
+                <div class="card rounded-1">
+                  <div class="card-title d-flex justify-content-between mx-2 mt-3">
+                    <h5>Sierra de grazalema</h5>
+                    <p>09/23</p>
+                  </div>
+                  <img src="https://www.cumbresdelsur.es/wp-content/uploads/parque-natural-sierra-de-grazalema.jpg" class="card-img rounded-0" alt="Sierra de grazalema">
+                  <div class="card-body">
+                    <h6 class="card-text">67 likes</h6>
+                    <p class="card-text">Un lugar donde respirar</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
